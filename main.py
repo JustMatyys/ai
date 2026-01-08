@@ -43,8 +43,8 @@ def startup():
     elif select == "q" or "Q":
         exit()
         
-    elif select != "1" or "2" or "3" or "4":
-        print("Vyber si prosím správný model!")
+    elif select != "1" or "2" or "3" or "4" or "Q" or "q":
+        print('Please chose the right model!')
         time.sleep(3)
         print("\n" * 100)
         clear()
@@ -53,7 +53,7 @@ def startup():
 def setup_default():
     global system_defualt
     clear()
-    system_defualt = input("Napis nove defualtni chovani AI pro tuhle session v techto zavorkach '': ")
+    system_defualt = input("Set the default behaviour for the AI in this session: ")
 
 startup()
 
@@ -70,7 +70,7 @@ while True:
       },
       {
         'role': 'system',
-        'content': "'" + system_defualt + "'"
+        'content': """'''""" + system_defualt + """'''"""
       },
     ]
 
