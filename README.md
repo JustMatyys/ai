@@ -1,4 +1,4 @@
-# my Ollama in python testing repo
+# my Ollama in python testing repo (branch "web-search")
 ## patch 1 (i dont know the date im going to add that later)
 1. Added web search functionality because i wanted to.
 2. made it work
